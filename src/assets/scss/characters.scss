@@ -1,0 +1,58 @@
+@import 'reset';
+@import 'media';
+@import 'variables';
+
+.characters {
+    font-family: $font-primary ;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    background: #343232;
+    padding: 50px 100px;
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+
+    @include media ($sm) {
+        padding: 50px 25px;
+    }
+
+    &__inner-search {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    &__card {
+        position: relative;
+        background: #A38F8F;
+        border-radius: 40px;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 50px;
+        z-index: 5;
+        padding: 50px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+
+        @include media ($sm) {
+            height: 250px;
+            gap: 30px;
+        }
+
+    }
+
+    &__name {
+        color: #FFFFFF;
+        font-size: 40px;
+
+    }
+
+    &__button {
+        background-color: #3A3131;
+        color: #B81C1C;
+    }
+
+}

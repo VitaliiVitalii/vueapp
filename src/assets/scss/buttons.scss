@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'media';
+@import 'variables';
+
+.buttons {
+    margin: auto;
+    padding: 10px 30px;
+    background: $secondary;
+    border-radius: 50px;
+    color: $primary;
+    font-size: 24px;
+    border-color: $secondary;
+    z-index: 10;
+    position: relative;
+
+    &:hover {
+        background: $bg;
+        color: $secondary;
+        border-color: $bg;
+        box-shadow: 0 0 0 0.25rem rgba(245, 19, 3, 0.25);
+
+    }
+
+    &:active {
+        background-color: #3A3131;
+        color: $secondary;
+
+    }
+
+}

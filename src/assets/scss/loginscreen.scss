@@ -1,0 +1,73 @@
+@import 'reset';
+@import 'media';
+@import 'variables';
+
+.registry {
+    font-family: $font-primary;
+    overflow: hidden;
+    position: relative;
+    font-weight: 700;
+    height: 100vh;
+    background: $bg;
+
+    &__title {
+        position: relative;
+        font-size: 200px;
+        line-height: 220px;
+        text-align: center;
+        color: $primary;
+        background: $secondary;
+        margin-bottom: 60px;
+
+        @include media ($sm) {
+            font-size: 90px;
+            line-height: 110px;
+        }
+
+    }
+
+    &__wrapper {
+        z-index: 5;
+        max-width: 600px;
+        width: auto;
+        margin: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        background: #A38F8F;
+        position: relative;
+
+        @include media ($sm) {
+            margin: 0 15px;
+
+        }
+
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 500px;
+
+        @include media ($sm) {
+            max-width: 400px;
+        }
+
+    }
+
+}
+
+.form {
+    gap: 10px;
+
+}
+
+.elips {
+    position: absolute;
+    width: 1440px;
+    height: 1440px;
+    left: -720px;
+    top: 611px;
+    background: $secondary;
+    filter: blur(750px);
+}

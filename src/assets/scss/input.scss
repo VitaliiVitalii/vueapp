@@ -1,0 +1,25 @@
+@import 'reset';
+@import 'media';
+@import 'variables';
+
+
+.input {
+    font-family: $font-secondary;
+    background: #E6DCDC;
+    border: 5px solid rgba(59, 49, 49, 0.79);
+    border-radius: 20px;
+    font-weight: 400;
+
+}
+
+.input:focus {
+    border-color: $secondary;
+    box-shadow: 0 0 0 0.25rem rgba(245, 19, 3, 0.25);
+
+}
+
+.label {
+    font-family: $font-secondary;
+    color: #000000;
+
+}
